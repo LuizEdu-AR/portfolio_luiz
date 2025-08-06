@@ -1,0 +1,37 @@
+.skill-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 40px;
+    gap: 50px;
+}
+
+.skill-h2{
+    color: #fff;
+    font-size: 48px;
+}
+
+.skill-card-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #212121;
+    padding: 50px 100px;
+}
+
+.skill-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.skill-h3{
+    font-size: 72px;
+    color: #424242;
+}
+
+.skill-p{
+    font-size: 24px;
+    color: #27ae60;
+}

@@ -1,0 +1,58 @@
+.falling-stars {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+.star {
+    position: absolute;
+    background: white;
+    animation: fall linear infinite;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    box-shadow: 0 0 8px rgba(255, 255, 255, 1), 0 0 16px rgba(255, 255, 255, 0.7);
+    filter: brightness(1.2);
+}
+
+@keyframes fall {
+    0% {
+        transform: translateY(-50vh) rotate(0deg);
+        opacity: 0;
+    }
+    5% {
+        opacity: 1;
+    }
+    95% {
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(120vh) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+/* Variações de cores para algumas estrelas */
+.star:nth-child(2n) {
+    background: #27ae60; /* Verde */
+    box-shadow: 0 0 8px rgba(39, 174, 96, 1), 0 0 16px rgba(39, 174, 96, 0.7);
+}
+
+/* Animação adicional de brilho para algumas estrelas */
+.star:nth-child(3n) {
+    animation: fall linear infinite, twinkle 2s ease-in-out infinite alternate;
+}
+
+@keyframes twinkle {
+    0% {
+        filter: brightness(1);
+        transform: scale(1);
+    }
+    100% {
+        filter: brightness(1.5);
+        transform: scale(1.1);
+    }
+}

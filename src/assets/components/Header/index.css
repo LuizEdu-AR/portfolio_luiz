@@ -1,0 +1,35 @@
+.header-maincontainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 28px 0px;
+    background-color: none;
+    color: white;
+}
+
+.header-h2{
+    font-size: 36px;
+}
+
+.header-ul{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.header-li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.header-link{
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    cursor: pointer;
+}
+
+.header-link:hover{
+    color: #27ae60;
+}

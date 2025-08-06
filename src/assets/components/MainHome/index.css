@@ -1,0 +1,52 @@
+.main-home-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-home{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.home-h1{
+    color: #fff;
+    font-size: 96px;
+}
+
+.home-p{
+    font-size: 24px;
+    color: #828282;
+    font-weight: 500;
+}
+
+.home-button{
+    background-color: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 27px;
+    transition: 0.7s;
+    background-color: #171717;
+}
+
+.home-button:hover{
+    background-color: #27ea60;
+    border: 1px solid #27ea60;
+    cursor: pointer;
+}
+
+.ball-image{
+    width: 500px;
+    height: 500px;
+    padding: 20px;
+    background-color: rgb(108, 108, 108, 20%);
+    border-radius: 50%;
+}
+
+.home-img{
+    width: 460px;
+    height: 460px;
+    border-radius: 50%;
+}
