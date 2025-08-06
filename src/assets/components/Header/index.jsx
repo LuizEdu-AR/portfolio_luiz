@@ -1,8 +1,22 @@
 import './index.css'
+import { useState, useEffect } from 'react'
 
 const Header = () => {
+  const [isScrolled, setIsScrolled] = useState(false)
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop = window.scrollY
+      setIsScrolled(scrollTop > 50)
+    }
+
+    window.addEventListener('scroll', handleScroll)
+    
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
+
   return (
-    <div className='header-maincontainer'>
+    <div className={`header-maincontainer ${isScrolled ? 'scrolled' : ''}`}>
         <div className="name-container">
             <h2 className='header-h2'>Luiz Eduardo</h2>
         </div>
