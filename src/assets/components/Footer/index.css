@@ -4,3 +4,20 @@
     font-weight: 500;
     padding-bottom: 40px;
 }
+
+/* Responsivo para Tablet */
+@media (max-width: 810px) {
+    .footer-container {
+        padding-bottom: 30px;
+        font-size: 14px;
+    }
+}
+
+/* Responsivo para Mobile */
+@media (max-width: 390px) {
+    .footer-container {
+        padding-bottom: 20px;
+        font-size: 12px;
+        padding: 0 20px 20px 20px;
+    }
+}

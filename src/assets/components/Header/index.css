@@ -33,3 +33,47 @@
 .header-link:hover{
     color: #27ae60;
 }
+
+/* Responsivo para Tablet */
+@media (max-width: 810px) {
+    .header-h2 {
+        font-size: 28px;
+    }
+    
+    .header-ul {
+        gap: 25px;
+    }
+    
+    .header-li {
+        margin-right: 10px;
+    }
+    
+    .header-link {
+        font-size: 14px;
+    }
+}
+
+/* Responsivo para Mobile */
+@media (max-width: 390px) {
+    .header-maincontainer {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px 0px;
+    }
+    
+    .header-h2 {
+        font-size: 24px;
+    }
+    
+    .header-ul {
+        gap: 15px;
+    }
+    
+    .header-li {
+        margin-right: 5px;
+    }
+    
+    .header-link {
+        font-size: 12px;
+    }
+}

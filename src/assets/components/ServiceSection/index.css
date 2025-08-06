@@ -37,3 +37,84 @@
     max-width: 55px;
     max-height: 55px;
 }
+
+.break-mobile {
+    display: inline;
+}
+
+@media (max-width: 810px) {
+    .service-section-container {
+        padding: 0 30px;
+        gap: 40px;
+    }
+    
+    .service-title {
+        font-size: 36px;
+    }
+    
+    .service-card-container {
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+    }
+    
+    .service-card {
+        width: 100%;
+        max-width: 400px;
+        padding: 30px 40px;
+        gap: 25px;
+    }
+    
+    .service-p {
+        font-size: 28px;
+    }
+    
+    .service-icon {
+        max-width: 45px;
+        max-height: 45px;
+    }
+    
+    .break-mobile {
+        display: block;
+    }
+}
+
+@media (max-width: 390px) {
+    .service-section-container {
+        padding: 0 20px;
+        gap: 30px;
+    }
+    
+    .service-title {
+        font-size: 28px;
+        text-align: center;
+    }
+    
+    .service-card-container {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+    
+    .service-card {
+        width: 100%;
+        padding: 25px 20px;
+        gap: 20px;
+        text-align: center;
+    }
+    
+    .service-p {
+        font-size: 20px;
+        text-align: center;
+    }
+    
+    .service-icon {
+        max-width: 35px;
+        max-height: 35px;
+        align-self: center;
+    }
+    
+    .break-mobile {
+        display: block;
+    }
+}

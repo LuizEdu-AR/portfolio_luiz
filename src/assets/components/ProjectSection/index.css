@@ -46,11 +46,19 @@
     font-weight: 400;
 }
 
+.project-img{
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    object-fit: contain;
+}
+
 .project-link{
-    text-decoration: none; /* Remove sublinhado do link */
-    color: inherit; /* Herda as cores dos elementos filhos */
-    display: block; /* Faz o link ocupar todo o espaço do card */
-    transition: transform 0.3s ease; /* Adiciona uma transição suave */
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    transition: transform 0.3s ease;
+    width: 255px;
 }
 
 .project-link:hover{
@@ -59,4 +67,96 @@
 
 .project-link:hover .project-card{
     box-shadow: 0 5px 25px -5px rgba(214, 216, 228, 0.30); /* Intensifica a sombra no hover */
+}
+
+/* Responsivo para Tablet */
+@media (max-width: 810px) {
+    .project-section-container {
+        padding: 0 30px;
+        gap: 40px;
+    }
+    
+    .project-title {
+        font-size: 36px;
+    }
+    
+    .project-card-container {
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+    }
+    
+    .project-card {
+        width: 100%;
+        max-width: 350px;
+        padding: 40px 20px;
+        gap: 20px;
+    }
+    
+    .project-link {
+        width: 100%;
+        max-width: 350px;
+    }
+    
+    .project-h3 {
+        font-size: 16px;
+    }
+    
+    .project-p {
+        font-size: 16px;
+    }
+    
+    .project-sub {
+        font-size: 14px;
+    }
+    
+    .project-img {
+        max-width: 180px;
+    }
+}
+
+/* Responsivo para Mobile */
+@media (max-width: 390px) {
+    .project-section-container {
+        padding: 0 20px;
+        gap: 30px;
+    }
+    
+    .project-title {
+        font-size: 28px;
+        text-align: center;
+    }
+    
+    .project-card-container {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+    
+    .project-card {
+        width: 100%;
+        padding: 30px 15px;
+        gap: 15px;
+        text-align: center;
+    }
+    
+    .project-link {
+        width: 100%;
+    }
+    
+    .project-h3 {
+        font-size: 14px;
+    }
+    
+    .project-p {
+        font-size: 14px;
+    }
+    
+    .project-sub {
+        font-size: 12px;
+    }
+    
+    .project-img {
+        max-width: 150px;
+    }
 }

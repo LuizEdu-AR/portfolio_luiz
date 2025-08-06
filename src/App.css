@@ -14,3 +14,19 @@
 html {
     scroll-behavior: smooth;
 }
+
+/* Responsivo para Tablet */
+@media (max-width: 810px) {
+    .App {
+        padding: 0px 40px;
+        gap: 80px;
+    }
+}
+
+/* Responsivo para Mobile */
+@media (max-width: 390px) {
+    .App {
+        padding: 0px 20px;
+        gap: 60px;
+    }
+}

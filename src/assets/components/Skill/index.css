@@ -35,3 +35,63 @@
     font-size: 24px;
     color: #27ae60;
 }
+
+/* Responsivo para Tablet */
+@media (max-width: 810px) {
+    .skill-container {
+        padding: 0 30px;
+        gap: 40px;
+    }
+    
+    .skill-h2 {
+        font-size: 36px;
+    }
+    
+    .skill-card-container {
+        padding: 40px 40px;
+        justify-content: space-around;
+        gap: 20px;
+    }
+    
+    .skill-h3 {
+        font-size: 56px;
+    }
+    
+    .skill-p {
+        font-size: 18px;
+        text-align: center;
+    }
+}
+
+/* Responsivo para Mobile */
+@media (max-width: 390px) {
+    .skill-container {
+        padding: 0 20px;
+        gap: 30px;
+    }
+    
+    .skill-h2 {
+        font-size: 28px;
+        text-align: center;
+    }
+    
+    .skill-card-container {
+        flex-direction: column;
+        padding: 30px 20px;
+        gap: 25px;
+    }
+    
+    .skill-card {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .skill-h3 {
+        font-size: 42px;
+    }
+    
+    .skill-p {
+        font-size: 16px;
+        text-align: center;
+    }
+}

@@ -11,7 +11,11 @@ const ServiceSection = () => {
             <div className='service-card-container'>
                 <div className="service-card">
                     <img src={SoftLogo} alt="Ícone de Serviço" className='service-icon' />
-                    <p className="service-p">Software Development</p>
+                    <p className="service-p">
+                        <span className="software-text">Software</span>
+                        <span className="break-mobile"> </span>
+                        <span className="development-text">Development</span>
+                    </p>
                 </div>
                 <div className="service-card">
                     <img src={WevLogo} alt="Ícone de Serviço" className='service-icon' />
@@ -19,7 +23,11 @@ const ServiceSection = () => {
                     </div>
                 <div className="service-card">
                     <img src={DevLogo} alt="Ícone de Serviço" className='service-icon' />
-                    <p className="service-p">Web Development</p>
+                    <p className="service-p">
+                        <span className="web-text">Web</span>
+                        <span className="break-mobile"> </span>
+                        <span className="development-text">Development</span>
+                    </p>
                 </div>
             </div>
         </div>

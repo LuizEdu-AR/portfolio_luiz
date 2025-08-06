@@ -51,3 +51,82 @@
     border-radius: 50%;
     background-color: #27ae60;
 }
+
+/* Responsivo para Tablet */
+@media (max-width: 810px) {
+    .about-container {
+        padding: 0 60px;
+        gap: 40px;
+    }
+    
+    .about-title {
+        font-size: 36px;
+    }
+    
+    .about-text {
+        font-size: 16px;
+        text-align: center;
+    }
+    
+    .about-info {
+        gap: 30px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    .info-container {
+        height: 150px;
+        gap: 15px;
+        width: 180px;
+        flex-shrink: 0;
+    }
+    
+    .miniball-container {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .miniball {
+        width: 10px;
+        height: 10px;
+    }
+}
+
+/* Responsivo para Mobile */
+@media (max-width: 390px) {
+    .about-container {
+        padding: 0 20px;
+        gap: 30px;
+    }
+    
+    .about-title {
+        font-size: 28px;
+    }
+    
+    .about-text {
+        font-size: 14px;
+        text-align: center;
+        line-height: 1.6;
+    }
+    
+    .about-info {
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .info-container {
+        height: auto;
+        gap: 12px;
+        width: 100%;
+    }
+    
+    .miniball-container {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .miniball {
+        width: 8px;
+        height: 8px;
+    }
+}

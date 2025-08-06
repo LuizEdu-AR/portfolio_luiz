@@ -11,7 +11,7 @@ const About = () => {
                         <div className="miniball"></div>
                     </div>
                     <p className="info">Nome Completo</p>
-                    <p className="subinfo" style={{maxWidth: '206px'}}>Luiz Eduardo de Almeida Rodrigues</p>
+                    <p className="subinfo">Luiz Eduardo de Almeida Rodrigues</p>
                 </div>
                 <div className="info-container">
                     <div className="miniball-container">

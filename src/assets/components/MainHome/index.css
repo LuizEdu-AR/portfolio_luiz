@@ -50,3 +50,74 @@
     height: 460px;
     border-radius: 50%;
 }
+
+/* Responsivo para Tablet */
+@media (max-width: 810px) {
+    .main-home-container {
+        flex-direction: column;
+        gap: 40px;
+        text-align: center;
+    }
+    
+    .main-home {
+        align-items: center;
+    }
+    
+    .home-h1 {
+        font-size: 64px;
+    }
+    
+    .home-p {
+        font-size: 20px;
+    }
+    
+    .ball-image {
+        width: 350px;
+        height: 350px;
+        padding: 15px;
+    }
+    
+    .home-img {
+        width: 320px;
+        height: 320px;
+    }
+}
+
+/* Responsivo para Mobile */
+@media (max-width: 390px) {
+    .main-home-container {
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+    }
+    
+    .main-home {
+        align-items: center;
+    }
+    
+    .home-h1 {
+        font-size: 36px;
+        line-height: 1.2;
+    }
+    
+    .home-p {
+        font-size: 16px;
+        text-align: center;
+    }
+    
+    .home-button {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+    
+    .ball-image {
+        width: 250px;
+        height: 250px;
+        padding: 10px;
+    }
+    
+    .home-img {
+        width: 230px;
+        height: 230px;
+    }
+}
