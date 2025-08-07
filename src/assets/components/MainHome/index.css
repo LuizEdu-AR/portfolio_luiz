@@ -1,43 +1,42 @@
-.main-home-container{
+.main-home-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.main-home{
+.main-home {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 15px;
 }
 
-.home-h1{
+.home-h1 {
     color: #fff;
     font-size: 96px;
 }
 
-.home-p{
+.home-p {
     font-size: 24px;
     color: #828282;
     font-weight: 500;
 }
 
-.home-button{
-    background-color: none;
+.home-button {
+    background-color: #27ae60;
     color: #fff;
-    border: 1px solid #fff;
+    border: 1px solid #27ae60;
     padding: 12px 27px;
     transition: 0.7s;
-    background-color: #171717;
 }
 
-.home-button:hover{
-    background-color: #27ea60;
-    border: 1px solid #27ea60;
+.home-button:hover {
+    background-color: #171717;
+    border: 1px solid #fff;
     cursor: pointer;
 }
 
-.ball-image{
+.ball-image {
     width: 500px;
     height: 500px;
     padding: 20px;
@@ -45,7 +44,7 @@
     border-radius: 50%;
 }
 
-.home-img{
+.home-img {
     width: 460px;
     height: 460px;
     border-radius: 50%;
@@ -58,25 +57,25 @@
         gap: 40px;
         text-align: center;
     }
-    
+
     .main-home {
         align-items: center;
     }
-    
+
     .home-h1 {
         font-size: 64px;
     }
-    
+
     .home-p {
         font-size: 20px;
     }
-    
+
     .ball-image {
         width: 350px;
         height: 350px;
         padding: 15px;
     }
-    
+
     .home-img {
         width: 320px;
         height: 320px;
@@ -90,32 +89,32 @@
         gap: 30px;
         text-align: center;
     }
-    
+
     .main-home {
         align-items: center;
     }
-    
+
     .home-h1 {
         font-size: 36px;
         line-height: 1.2;
     }
-    
+
     .home-p {
         font-size: 16px;
         text-align: center;
     }
-    
+
     .home-button {
         padding: 10px 20px;
         font-size: 14px;
     }
-    
+
     .ball-image {
         width: 250px;
         height: 250px;
         padding: 10px;
     }
-    
+
     .home-img {
         width: 230px;
         height: 230px;
@@ -134,7 +133,7 @@
     }
 }
 
-/* Responsivo para Mobile */  
+/* Responsivo para Mobile */
 @media (max-width: 390px) {
     .desktop-break {
         display: none;
