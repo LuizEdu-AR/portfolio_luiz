@@ -20,8 +20,18 @@
     -webkit-backdrop-filter: blur(10px);
 }
 
+.name-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+}
+
 .header-h2{
     font-size: 36px;
+    position: relative;
+    z-index: 2;
+    margin: 0;
 }
 
 .header-ul{

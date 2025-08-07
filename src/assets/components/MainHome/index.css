@@ -121,3 +121,22 @@
         height: 230px;
     }
 }
+
+/* Quebra de linha apenas no desktop */
+.desktop-break {
+    display: inline;
+}
+
+/* Responsivo para Tablet */
+@media (max-width: 810px) {
+    .desktop-break {
+        display: none;
+    }
+}
+
+/* Responsivo para Mobile */  
+@media (max-width: 390px) {
+    .desktop-break {
+        display: none;
+    }
+}

@@ -12,7 +12,10 @@ const MainHome = () => {
     return (
         <div className='main-home-container'>
             <div className="main-home">
-                <h1 className="home-h1">Oi, Eu sou Luiz Eduardo</h1>
+                <h1 className="home-h1">
+                    Oi, Eu sou <br className="desktop-break" />
+                    Luiz Eduardo
+                </h1>
                 <p className="home-p">UI/UX Designer & Desenvolvedor FrontEnd</p>
                 <button className="home-button" onClick={handleDownloadCV}>Download CV</button>
             </div>

@@ -1,6 +1,8 @@
 import './index.css'
 import { useState, useEffect } from 'react'
 
+import WaveEffect from '../WaveEffect'
+
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false)
 
@@ -18,6 +20,7 @@ const Header = () => {
   return (
     <div className={`header-maincontainer ${isScrolled ? 'scrolled' : ''}`}>
         <div className="name-container">
+            <WaveEffect />
             <h2 className='header-h2'>Luiz Eduardo</h2>
         </div>
         <div className="section-header">
