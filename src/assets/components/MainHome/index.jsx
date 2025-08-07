@@ -1,10 +1,11 @@
 import './index.css'
 import fotoPessoal from '../../img/foto pessoal.jpg'
+import curriculoPDF from '../../documents/curriculo-luiz-eduardo.pdf'
 
 const MainHome = () => {
     const handleDownloadCV = () => {
         const link = document.createElement('a')
-        link.href = '/curriculo-luiz-eduardo.pdf'
+        link.href = curriculoPDF
         link.download = 'Curriculo-Luiz-Eduardo-UIUX.pdf'
         link.click()
     }
