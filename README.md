@@ -6,16 +6,19 @@ Um portfólio moderno e responsivo desenvolvido com React e Vite, apresentando p
 
 ## 📋 Índice
 
-- [Sobre o Projeto](#sobre-o-projeto)
-- [Tecnologias Utilizadas](#tecnologias-utilizadas)
-- [Funcionalidades](#funcionalidades)
-- [Estrutura do Projeto](#estrutura-do-projeto)
-- [Instalação](#instalação)
-- [Como Executar](#como-executar)
-- [Responsividade](#responsividade)
-- [Componentes](#componentes)
-- [Deploy](#deploy)
-- [Contribuição](#contribuição)
+- [Sobre o Projeto](#-sobre-o-projeto)
+- [Tecnologias Utilizadas](#️-tecnologias-utilizadas)
+- [Funcionalidades](#-funcionalidades)
+- [Estrutura do Projeto](#-estrutura-do-projeto)
+- [Instalação](#-instalação)
+- [Como Executar](#️-como-executar)
+- [Responsividade](#-responsividade)
+- [Componentes](#-componentes)
+- [Customização](#-customização)
+- [Deploy](#-deploy)
+- [Contribuição](#-contribuição)
+- [Licença](#-licença)
+- [Autor](#-autor)
 
 ## 🎯 Sobre o Projeto
 
