@@ -1,5 +1,7 @@
 # 🚀 Portfolio Pessoal - Luiz Eduardo
 
+## 🌐 Disponível  em: [www.luizeduardo.dev.br](https://www.luizeduardo.dev.br)
+
 Um portfólio moderno e responsivo desenvolvido com React e Vite, apresentando projetos, habilidades e serviços de desenvolvimento web.
 
 ## 📋 Índice
@@ -282,7 +284,7 @@ Este projeto está sob a licença MIT. Veja o arquivo `LICENSE` para mais detalh
 
 **Luiz Eduardo**
 - GitHub: [@LuizEdu-AR](https://github.com/LuizEdu-AR)
-- LinkedIn: [Seu LinkedIn](https://linkedin.com/in/seu-perfil)
+- LinkedIn: [Meu LinkedIn](https://www.linkedin.com/in/luiz-eduardoar/)
 
 ---
 
