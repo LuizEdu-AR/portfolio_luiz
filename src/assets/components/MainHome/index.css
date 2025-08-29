@@ -22,18 +22,41 @@
     font-weight: 500;
 }
 
-.home-button {
-    background-color: #27ae60;
-    color: #fff;
-    border: 1px solid #27ae60;
-    padding: 12px 27px;
-    transition: 0.7s;
+.home-buttons-container {
+    display: flex;
+    gap: 15px;
+    align-items: center;
 }
 
-.home-button:hover {
-    background-color: #171717;
-    border: 1px solid #fff;
+.home-button {
+    padding: 12px 27px;
+    transition: 0.7s;
+    border: none;
     cursor: pointer;
+    font-weight: 500;
+    border-radius: 5px;
+}
+
+.home-button.primary {
+    background-color: rgb(255, 255, 255, 20%);
+    color: #fff;
+    border: 1px solid rgb(255, 255, 255, 20%);
+}
+
+.home-button.primary:hover {
+    background-color: #27ae60;
+    border: 1px solid #27ae60;
+}
+
+.home-button.secondary {
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+.home-button.secondary:hover {
+    background-color: #fff;
+    color: #171717;
 }
 
 .ball-image {
@@ -104,9 +127,17 @@
         text-align: center;
     }
 
+    .home-buttons-container {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+    }
+
     .home-button {
         padding: 10px 20px;
         font-size: 14px;
+        width: 100%;
+        max-width: 200px;
     }
 
     .ball-image {

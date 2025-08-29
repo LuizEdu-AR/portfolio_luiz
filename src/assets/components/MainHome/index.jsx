@@ -18,7 +18,10 @@ const MainHome = () => {
                     Luiz Eduardo
                 </h1>
                 <p className="home-p">UI/UX Designer & Desenvolvedor FrontEnd</p>
-                <button className="home-button" onClick={handleDownloadCV}>Download CV</button>
+                <div className="home-buttons-container">
+                    <button className="home-button primary" onClick={handleDownloadCV}>Download CV</button>
+                    <button className="home-button secondary" onClick={() => window.open('https://github.com/LuizEdu-AR', '_blank')}>GitHub</button>
+                </div>
             </div>
             <div className="image-home-container">
                 <div className="ball-image">
