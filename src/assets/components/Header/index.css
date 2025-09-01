@@ -4,7 +4,7 @@
     align-items: center;
     padding: 28px 80px;
     background-color: transparent;
-    color: white;
+    color: var(--text-primary);
     position: fixed;
     top: 0;
     left: 0;
@@ -15,7 +15,7 @@
 }
 
 .header-maincontainer.scrolled {
-    background-color: rgba(33, 33, 33, 0.4);
+    background-color: var(--bg-card);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
 }
@@ -52,8 +52,15 @@
     margin-right: 20px;
 }
 
+.theme-toggle-li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 0;
+    margin-left: 10px;
+}
+
 .header-link{
-    color: white;
+    color: var(--text-primary);
     text-decoration: none;
     transition: 0.7s;
     cursor: pointer;
@@ -62,21 +69,22 @@
 }
 
 .header-link:hover{
-    background-color: rgb(255, 255, 255, 20%);
+    background-color: var(--btn-secondary-hover);
 }
 
 .github-link {
-    color: white;
+    color: #ffffff;
     text-decoration: none;
     transition: 0.7s;
     cursor: pointer;
     padding: 5px 10px;
     border-radius: 5px;
-    background-color: rgb(255, 255, 255, 20%);
+    background-color: var(--btn-secondary-bg);
 }
 
 .github-link:hover {
-    background-color: #27ae60;
+    background-color: var(--btn-primary-hover);
+    color: #ffffff;
 }
 
 /* Menu hambúrguer - oculto por padrão */
@@ -90,7 +98,7 @@
 .hamburger-line {
     width: 25px;
     height: 3px;
-    background-color: white;
+    background-color: var(--text-primary);
     margin: 3px 0;
     transition: 0.3s;
     border-radius: 2px;
@@ -115,7 +123,7 @@
     right: -100%;
     width: 70%;
     height: 100vh;
-    background-color: rgba(33, 33, 33, 0.95);
+    background-color: var(--bg-card);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     display: flex;
@@ -145,7 +153,7 @@
 }
 
 .mobile-menu-link {
-    color: white;
+    color: var(--text-primary);
     text-decoration: none;
     font-size: 18px;
     transition: 0.3s;
@@ -155,7 +163,13 @@
 }
 
 .mobile-menu-link:hover {
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: var(--btn-secondary-hover);
+}
+
+.theme-toggle-mobile {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
 }
 
 /* Overlay para fechar o menu */

@@ -7,7 +7,7 @@
 }
 
 .skill-h2{
-    color: #fff;
+    color: var(--text-primary);
     font-size: 48px;
 }
 
@@ -15,9 +15,10 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
-    background-color: #212121;
+    background-color: var(--bg-card);
     padding: 50px 100px;
     border-radius: 5px;
+    border: 1px solid var(--border-color);
 }
 
 .skill-card{
@@ -29,12 +30,12 @@
 
 .skill-h3{
     font-size: 72px;
-    color: #424242;
+    color: var(--text-secondary);
 }
 
 .skill-p{
     font-size: 24px;
-    color: #27ae60;
+    color: var(--text-accent);
 }
 
 /* Responsivo para Tablet */

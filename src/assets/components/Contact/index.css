@@ -9,21 +9,20 @@
 
 .contact-h2{
     font-size: 48px;
-    color: #27ae60;
+    color: var(--text-accent);
 }
 
 .contact-p{
     font-size: 18px;
-    color: #4f4f4f;
+    color: var(--text-secondary);
 }
 
 .contact-button{
-    background-color: none;
-    color: #fff;
-    border: 1px solid #fff;
+    background-color: var(--btn-primary-bg);
+    color: #ffffff;
+    border: 1px solid var(--btn-primary-bg);
     padding: 12px 27px;
     transition: 0.7s;
-    background-color: #171717;
     text-decoration: none;
     display: inline-block;
     font-family: inherit;
@@ -32,9 +31,19 @@
 }
 
 .contact-button:hover{
-    background-color: #27ea60;
-    border: 1px solid #27ea60;
+    background-color: var(--btn-primary-hover);
+    border: 1px solid var(--btn-primary-hover);
     cursor: pointer;
+    color: #ffffff;
+}
+
+/* Regra específica para o modo claro - texto do botão contato mais escuro */
+.light-theme .contact-button {
+    color: #212529;
+}
+
+.light-theme .contact-button:hover {
+    color: #212529;
 }
 
 /* Responsivo para Tablet */

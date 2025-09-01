@@ -8,7 +8,7 @@
 
 .service-title{
     font-size: 48px;
-    color: #fff;
+    color: var(--text-primary);
 }
 
 .service-card-container{
@@ -22,13 +22,14 @@
     flex-direction: column;
     gap: 30px;
     padding: 35px 50px;
-    background-color: #212121;
+    background-color: var(--bg-card);
     width: 350px;
     border-radius: 5px;
+    border: 1px solid var(--border-color);
 }
 
 .service-p{
-    color: #515151;
+    color: var(--text-secondary);
     font-weight: 500;
     font-size: 36px;
     white-space: pre-line;

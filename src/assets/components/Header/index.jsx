@@ -2,6 +2,7 @@ import './index.css'
 import { useState, useEffect } from 'react'
 
 import WaveEffect from '../WaveEffect'
+import ThemeToggle from '../ThemeToggle'
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false)
@@ -48,6 +49,9 @@ const Header = () => {
                 <li className="github-li">
                   <a href="https://github.com/LuizEdu-AR" className="github-link" target="_blank" rel="noopener noreferrer">Meu GitHub</a>
                 </li>
+                <li className='header-li theme-toggle-li'>
+                    <ThemeToggle />
+                </li>
             </ul>
         </div>
 
@@ -72,6 +76,9 @@ const Header = () => {
                 </li>
                 <li className="mobile-menu-li">
                   <a href="https://github.com/LuizEdu-AR" className="mobile-menu-link" target="_blank" rel="noopener noreferrer" onClick={closeMenu}>Meu GitHub</a>
+                </li>
+                <li className='mobile-menu-li theme-toggle-mobile'>
+                    <ThemeToggle />
                 </li>
             </ul>
         </div>

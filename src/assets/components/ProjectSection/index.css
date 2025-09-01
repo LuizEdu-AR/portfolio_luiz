@@ -8,7 +8,7 @@
 
 .project-title{
     font-size: 48px;
-    color: #fff;
+    color: var(--text-primary);
 }
 
 .project-card-container{
@@ -24,25 +24,27 @@
     flex-direction: column;
     gap: 25px;
     padding: 50px 20px;
-    background-color: #212121;
+    background-color: var(--bg-card);
     width: 255px;
-    box-shadow: 0 0 20px -10px rgba(214, 216, 228, 0.20);
+    box-shadow: 0 0 20px -10px var(--shadow);
     border-radius: 5px;
+    border: 1px solid var(--border-color);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .project-h3{
-    color: #27ae60;
+    color: var(--text-accent);
     font-size: 18px;
 }
 
 .project-p{
-    color: #4f4f4f;
+    color: var(--text-secondary);
     font-size: 18px;
     font-weight: bold;
 }
 
 .project-sub{
-    color: #535353;
+    color: var(--text-secondary);
     font-size: 16px;
     font-weight: 400;
 }

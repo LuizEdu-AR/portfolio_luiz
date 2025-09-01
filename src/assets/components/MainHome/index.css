@@ -12,13 +12,13 @@
 }
 
 .home-h1 {
-    color: #fff;
+    color: var(--text-primary);
     font-size: 96px;
 }
 
 .home-p {
     font-size: 24px;
-    color: #828282;
+    color: var(--text-secondary);
     font-weight: 500;
 }
 
@@ -38,25 +38,27 @@
 }
 
 .home-button.primary {
-    background-color: rgb(255, 255, 255, 20%);
-    color: #fff;
-    border: 1px solid rgb(255, 255, 255, 20%);
+    background-color: var(--btn-secondary-bg);
+    color: #ffffff;
+    border: 1px solid var(--border-color);
 }
 
 .home-button.primary:hover {
-    background-color: #27ae60;
-    border: 1px solid #27ae60;
+    background-color: var(--btn-primary-hover);
+    border: 1px solid var(--btn-primary-hover);
+    color: #ffffff;
 }
 
 .home-button.secondary {
-    background-color: transparent;
-    color: #fff;
-    border: 1px solid #fff;
+    background-color: var(--btn-primary-bg);
+    color: #ffffff;
+    border: 1px solid var(--btn-primary-bg);
 }
 
 .home-button.secondary:hover {
-    background-color: #fff;
-    color: #171717;
+    background-color: var(--btn-secondary-hover);
+    border: 1px solid var(--border-color);
+    color: #ffffff;
 }
 
 .ball-image {
@@ -71,6 +73,15 @@
     width: 460px;
     height: 460px;
     border-radius: 50%;
+}
+
+/* Regra específica para o modo claro - texto do botão secondary mais escuro */
+.light-theme .home-button.secondary {
+    color: #212529;
+}
+
+.light-theme .home-button.secondary:hover {
+    color: #212529;
 }
 
 /* Responsivo para Tablet */

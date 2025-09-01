@@ -7,22 +7,25 @@ import ProjectSection from './assets/components/ProjectSection'
 import Contact from './assets/components/Contact'
 import Footer from './assets/components/Footer'
 import FallingStars from './assets/components/BackgroundDots'
+import { ThemeProvider } from './contexts/ThemeContext'
 import './App.css'
 
 function App() {
 
   return (
-    <div className='App'>
-      <FallingStars />
-      <Header />
-      <MainHome />
-      <About />
-      <ServiceSection />
-      <Skill />
-      <ProjectSection />
-      <Contact />
-      <Footer />
-    </div>
+    <ThemeProvider>
+      <div className='App'>
+        <FallingStars />
+        <Header />
+        <MainHome />
+        <About />
+        <ServiceSection />
+        <Skill />
+        <ProjectSection />
+        <Contact />
+        <Footer />
+      </div>
+    </ThemeProvider>
   )
 }
 
