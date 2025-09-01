@@ -8,23 +8,26 @@ import Contact from './assets/components/Contact'
 import Footer from './assets/components/Footer'
 import FallingStars from './assets/components/BackgroundDots'
 import { ThemeProvider } from './contexts/ThemeContext'
+import { LanguageProvider } from './contexts/LanguageContext'
 import './App.css'
 
 function App() {
 
   return (
     <ThemeProvider>
-      <div className='App'>
-        <FallingStars />
-        <Header />
-        <MainHome />
-        <About />
-        <ServiceSection />
-        <Skill />
-        <ProjectSection />
-        <Contact />
-        <Footer />
-      </div>
+      <LanguageProvider>
+        <div className='App'>
+          <FallingStars />
+          <Header />
+          <MainHome />
+          <About />
+          <ServiceSection />
+          <Skill />
+          <ProjectSection />
+          <Contact />
+          <Footer />
+        </div>
+      </LanguageProvider>
     </ThemeProvider>
   )
 }

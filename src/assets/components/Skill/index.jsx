@@ -1,9 +1,12 @@
 import './index.css'
+import { useTranslation } from '../../../hooks/useTranslation'
 
 const Skill = () => {
+    const { t } = useTranslation()
+    
     return (
         <div className='skill-container'>
-            <h2 className="skill-h2">Habilidades e Ferramentas</h2>
+            <h2 className="skill-h2">{t('skillsTitle')}</h2>
             <div className="skill-card-container">
                 <div className="skill-card">
                     <h3 className="skill-h3">40%</h3>

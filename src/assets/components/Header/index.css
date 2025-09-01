@@ -59,6 +59,13 @@
     margin-left: 10px;
 }
 
+.language-toggle-li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 0;
+    margin-left: 10px;
+}
+
 .header-link{
     color: var(--text-primary);
     text-decoration: none;
@@ -116,7 +123,7 @@
     transform: rotate(45deg) translate(-5px, -6px);
 }
 
-/* Menu mobile - oculto por padrão */
+/* Menu mobile - oculto por padrão .*/
 .mobile-menu {
     position: fixed;
     top: 0;
@@ -170,6 +177,12 @@
     margin-top: 20px;
     display: flex;
     justify-content: center;
+}
+
+.mobile-toggles {
+    display: flex;
+    gap: 15px;
+    align-items: center;
 }
 
 /* Overlay para fechar o menu */

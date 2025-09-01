@@ -1,8 +1,8 @@
 # 🚀 Portfolio Pessoal - Luiz Eduardo
 
-## 🌐 Disponível  em: [www.luizeduardo.dev.br](https://www.luizeduardo.dev.br)
+## 🌐 Disponível em: [www.luizeduardo.dev.br](https://www.luizeduardo.dev.br)
 
-Um portfólio moderno e responsivo desenvolvido com React e Vite, apresentando projetos, habilidades e serviços de desenvolvimento web.
+Um portfólio moderno e responsivo desenvolvido com React e Vite, apresentando projetos, habilidades e serviços de desenvolvimento web. Inclui sistema completo de temas (claro/escuro) e tradução bilíngue (Português/Inglês).
 
 ## 📋 Índice
 
@@ -14,6 +14,8 @@ Um portfólio moderno e responsivo desenvolvido com React e Vite, apresentando p
 - [Como Executar](#️-como-executar)
 - [Responsividade](#-responsividade)
 - [Componentes](#-componentes)
+- [Sistema de Temas](#-sistema-de-temas)
+- [Sistema de Tradução](#-sistema-de-tradução)
 - [Customização](#-customização)
 - [Deploy](#-deploy)
 - [Contribuição](#-contribuição)
@@ -22,22 +24,30 @@ Um portfólio moderno e responsivo desenvolvido com React e Vite, apresentando p
 
 ## 🎯 Sobre o Projeto
 
-Este é um portfólio pessoal criado para apresentar projetos, habilidades e serviços profissionais. O site foi desenvolvido com foco em performance, responsividade e experiência do usuário, incluindo efeitos visuais modernos como estrelas cadentes animadas.
+Este é um portfólio pessoal criado para apresentar projetos, habilidades e serviços profissionais. O site foi desenvolvido com foco em performance, responsividade e experiência do usuário, incluindo efeitos visuais modernos, sistema de temas dinâmico e suporte completo a idiomas.
 
 ### ✨ Destaques
-- Design moderno e minimalista
-- Animações fluidas e efeitos visuais
-- Totalmente responsivo (Desktop, Tablet, Mobile)
-- Performance otimizada com Vite
-- Código limpo e bem estruturado
+- **Design moderno e minimalista** com temas claro/escuro
+- **Sistema bilíngue** (Português/Inglês) com persistência
+- **Animações fluidas** e efeitos visuais
+- **Totalmente responsivo** (Desktop, Tablet, Mobile)
+- **Performance otimizada** com Vite
+- **Código limpo** e bem estruturado com padrões modernos
 
 ## 🛠️ Tecnologias Utilizadas
 
 ### Frontend
 - **React 18** - Biblioteca JavaScript para interfaces de usuário
-- **Vite** - Build tool rápida e moderna
-- **CSS3** - Estilização com flexbox, grid e animações
+- **Vite 7.0.6** - Build tool rápida e moderna
+- **CSS3** - Estilização com variáveis CSS, flexbox, grid e animações
 - **JavaScript ES6+** - Linguagem de programação
+- **Context API** - Gerenciamento de estado global para temas e idiomas
+
+### Funcionalidades Avançadas
+- **Sistema de Temas** - Alternância dinâmica entre modo claro/escuro
+- **Internacionalização** - Suporte bilíngue com Context API e hooks personalizados
+- **Persistência Local** - localStorage para preferências do usuário
+- **Responsividade Total** - Design adaptável para todos os dispositivos
 
 ### Ferramentas de Desenvolvimento
 - **ESLint** - Linting e análise de código
@@ -46,21 +56,38 @@ Este é um portfólio pessoal criado para apresentar projetos, habilidades e ser
 
 ## 🌟 Funcionalidades
 
-### 🎨 Interface Visual
-- **Tema escuro moderno** com paleta de cores profissional
+### 🎨 Sistema de Temas
+- **Modo Escuro/Claro** com alternância dinâmica
+- **Detecção automática** do tema do sistema
+- **Persistência** das preferências do usuário
+- **Transições suaves** entre temas
+- **Variáveis CSS** para consistência visual
+
+### 🌍 Sistema Bilíngue
+- **Português/Inglês** com toggle de bandeiras
+- **Tradução completa** de todo o conteúdo
+- **Context API** para gerenciamento global
+- **Hook personalizado** `useTranslation` para fácil uso
+- **Persistência** da linguagem selecionada
+
+### 🎯 Interface Visual
+- **Design moderno** com glassmorphism
 - **Efeito de estrelas cadentes** no plano de fundo
 - **Hover effects** em cards e botões
 - **Animações CSS** suaves e responsivas
+- **Backdrop filter** e blur effects
 
 ### 📱 Responsividade Completa
 - **Desktop** (1024px+) - Layout de 3 colunas
 - **Tablet** (810px) - Layout adaptado com 2 colunas
 - **Mobile** (390px) - Layout de coluna única
+- **Menu responsivo** com hamburger menu
 
 ### 🧭 Navegação
-- **Menu de navegação** fixo e responsivo
+- **Menu de navegação** fixo com blur background
 - **Scroll suave** entre seções
 - **Links internos** para navegação rápida
+- **Botões de ação** para tema e idioma
 
 ### 📄 Seções do Portfolio
 1. **Home** - Apresentação principal
@@ -93,6 +120,9 @@ portfolio_luiz/
 │   │   │   ├── Header/
 │   │   │   │   ├── index.jsx
 │   │   │   │   └── index.css
+│   │   │   ├── LanguageToggle/          # 🆕 Novo
+│   │   │   │   ├── index.jsx
+│   │   │   │   └── index.css
 │   │   │   ├── MainHome/
 │   │   │   │   ├── index.jsx
 │   │   │   │   └── index.css
@@ -102,15 +132,30 @@ portfolio_luiz/
 │   │   │   ├── ServiceSection/
 │   │   │   │   ├── index.jsx
 │   │   │   │   └── index.css
-│   │   │   └── Skill/
+│   │   │   ├── Skill/
+│   │   │   │   ├── index.jsx
+│   │   │   │   └── index.css
+│   │   │   ├── ThemeToggle/             # 🆕 Novo
+│   │   │   │   ├── index.jsx
+│   │   │   │   └── index.css
+│   │   │   └── WaveEffect/
 │   │   │       ├── index.jsx
 │   │   │       └── index.css
 │   │   ├── images/
 │   │   └── svg/
+│   │       ├── flag-br.svg              # 🆕 Novo
+│   │       └── flag-us.svg              # 🆕 Novo
+│   ├── contexts/                        # 🆕 Nova pasta
+│   │   ├── LanguageContext.jsx          # 🆕 Novo
+│   │   └── ThemeContext.jsx             # 🆕 Novo
+│   ├── hooks/                           # 🆕 Nova pasta
+│   │   └── useTranslation.js            # 🆕 Novo
+│   ├── utils/                           # 🆕 Nova pasta
+│   │   └── translations.js              # 🆕 Novo
 │   ├── App.jsx
 │   ├── App.css
 │   ├── main.jsx
-│   └── index.css
+│   └── index.css                        # ✨ Atualizado com variáveis CSS
 ├── eslint.config.js
 ├── index.html
 ├── package.json
@@ -196,59 +241,174 @@ O projeto foi desenvolvido com **mobile-first** e conta com 3 breakpoints princi
 
 ### Header
 - **Função:** Navegação principal do site
-- **Recursos:** Menu responsivo, links de navegação
-- **Responsividade:** Menu colapsável em mobile
+- **Recursos:** Menu responsivo, botões de tema e idioma
+- **Responsividade:** Menu colapsável em mobile com blur background
+- **🆕 Novos recursos:** Integração com toggles de tema e idioma
+
+### ThemeToggle (🆕 Novo)
+- **Função:** Alternância entre tema claro e escuro
+- **Recursos:** Ícones sol/lua, transições suaves
+- **Tecnologia:** Context API + localStorage
+- **Design:** Botão circular com glassmorphism
+
+### LanguageToggle (🆕 Novo)
+- **Função:** Alternância entre português e inglês
+- **Recursos:** Bandeiras do Brasil e EUA em SVG
+- **Tecnologia:** Context API + useTranslation hook
+- **Design:** Botão circular combinando com ThemeToggle
 
 ### MainHome
 - **Função:** Seção de apresentação principal
 - **Recursos:** Introdução pessoal, call-to-action
+- **🆕 Atualizado:** Textos traduzidos dinamicamente
 - **Efeitos:** Animações de entrada
 
 ### About
 - **Função:** Informações pessoais e profissionais
 - **Recursos:** Biografia, objetivos
+- **🆕 Atualizado:** Conteúdo bilíngue completo
 - **Layout:** Cards informativos
 
 ### ServiceSection
 - **Função:** Apresentação dos serviços oferecidos
 - **Recursos:** Cards com ícones e descrições
+- **🆕 Atualizado:** Textos traduzidos
 - **Especial:** Quebras de linha responsivas em textos
 
 ### ProjectSection
 - **Função:** Portfólio de projetos
 - **Recursos:** Cards clicáveis, imagens, descrições
-- **Navegação:** Link para projeto externo (Ecop)
+- **🆕 Atualizado:** Nomes e descrições traduzidos
+- **Navegação:** Links para projetos externos
 
 ### Skill
 - **Função:** Exibição de habilidades técnicas
 - **Recursos:** Grade de tecnologias
+- **🆕 Atualizado:** Título traduzido
 - **Visual:** Ícones e percentuais
 
 ### Contact
 - **Função:** Informações de contato
 - **Recursos:** Links para redes sociais
+- **🆕 Atualizado:** Textos de contato traduzidos
 - **Layout:** Cards organizados
 
 ### Footer
 - **Função:** Rodapé do site
 - **Recursos:** Copyright e informações básicas
+- **🆕 Atualizado:** Copyright traduzido
 
 ### BackgroundDots/FallingStars
 - **Função:** Efeito visual de fundo
 - **Recursos:** Animação de estrelas cadentes
 - **Tecnologia:** CSS animations com clip-path
 
+## 🎨 Sistema de Temas
+
+### Estrutura
+O sistema de temas utiliza **Context API** e **CSS Variables** para uma alternância fluida:
+
+```jsx
+// ThemeContext.jsx
+const ThemeContext = createContext()
+
+// CSS Variables (index.css)
+:root {
+  --bg-primary: #171717;
+  --text-primary: #ffffff;
+}
+
+.light-theme {
+  --bg-primary: #ffffff;
+  --text-primary: #212529;
+}
+```
+
+### Funcionalidades
+- ✅ **Detecção automática** do tema do sistema
+- ✅ **Persistência** no localStorage
+- ✅ **Transições suaves** entre temas
+- ✅ **Compatibilidade total** com todos os componentes
+- ✅ **Botão circular** com ícones sol/lua
+
+## 🌍 Sistema de Tradução
+
+### Arquitetura
+Sistema completo de internacionalização com **Context API** e hooks personalizados:
+
+```jsx
+// LanguageContext.jsx - Gerenciamento global do idioma
+// useTranslation.js - Hook para acessar traduções
+// translations.js - Arquivo centralizado de traduções
+
+// Uso nos componentes:
+const { t } = useTranslation()
+return <h1>{t('welcomeMessage')}</h1>
+```
+
+### Funcionalidades
+- ✅ **Português/Inglês** completo
+- ✅ **Toggle visual** com bandeiras dos países
+- ✅ **Persistência** da linguagem escolhida
+- ✅ **Tradução dinâmica** de todo o conteúdo
+- ✅ **Hook personalizado** para fácil implementação
+- ✅ **Bandeiras SVG** para melhor compatibilidade
+
+### Conteúdo Traduzido
+- 🔹 **Navegação:** Menu e links
+- 🔹 **Seção Principal:** Saudação e apresentação
+- 🔹 **Sobre:** Biografia completa
+- 🔹 **Serviços:** Descrições dos serviços
+- 🔹 **Habilidades:** Título da seção
+- 🔹 **Projetos:** Nomes e tipos de projetos
+- 🔹 **Contato:** Formulário e textos
+- 🔹 **Rodapé:** Copyright
+
 ## 🎨 Customização
 
-### Cores
-As cores principais podem ser alteradas no arquivo `src/index.css`:
+### Temas
+As variáveis CSS para temas estão em `src/index.css`:
+
 ```css
+/* Tema Escuro (Padrão) */
 :root {
-  --primary-color: #27ae60;
-  --secondary-color: #fff;
-  --background-color: #1a1a1a;
-  --card-color: #212121;
-  --text-color: #515151;
+  --bg-primary: #171717;
+  --bg-secondary: #212121;
+  --bg-card: rgba(255, 255, 255, 0.05);
+  --text-primary: #ffffff;
+  --text-secondary: #4f4f4f;
+  --text-accent: #27ae60;
+}
+
+/* Tema Claro */
+.light-theme {
+  --bg-primary: #ffffff;
+  --bg-secondary: #f8f9fa;
+  --bg-card: rgba(248, 249, 250, 0.9);
+  --text-primary: #212529;
+  --text-secondary: #6c757d;
+  --text-accent: #27ae60;
+}
+```
+
+### Idiomas
+Para adicionar novos idiomas, edite `src/utils/translations.js`:
+
+```javascript
+export const translations = {
+  pt: {
+    welcomeMessage: "Bem-vindo!",
+    // ... outras traduções
+  },
+  en: {
+    welcomeMessage: "Welcome!",
+    // ... outras traduções
+  },
+  // Adicione novos idiomas aqui
+  es: {
+    welcomeMessage: "¡Bienvenido!",
+    // ... traduções em espanhol
+  }
 }
 ```
 
@@ -256,6 +416,12 @@ As cores principais podem ser alteradas no arquivo `src/index.css`:
 Os breakpoints responsivos estão definidos como:
 - **Tablet:** `@media (max-width: 810px)`
 - **Mobile:** `@media (max-width: 390px)`
+
+### Componentes Personalizados
+Cada componente possui seu próprio arquivo CSS para fácil customização:
+- **Glassmorphism:** `backdrop-filter: blur(10px)`
+- **Transições:** `transition: all 0.3s ease`
+- **Hover Effects:** `transform: scale(1.05)`
 
 ## 🌐 Deploy
 
@@ -286,9 +452,27 @@ Este projeto está sob a licença MIT. Veja o arquivo `LICENSE` para mais detalh
 ## 👨‍💻 Autor
 
 **Luiz Eduardo**
-- GitHub: [@LuizEdu-AR](https://github.com/LuizEdu-AR)
-- LinkedIn: [Meu LinkedIn](https://www.linkedin.com/in/luiz-eduardoar/)
+- **Portfolio:** [luizeduardo.dev.br](https://www.luizeduardo.dev.br)
+- **GitHub:** [@LuizEdu-AR](https://github.com/LuizEdu-AR)
+- **LinkedIn:** [luiz-eduardoar](https://www.linkedin.com/in/luiz-eduardoar/)
+- **Email:** luizedu.btiufersa@gmail.com
+
+### 🚀 Últimas Atualizações (2025)
+- ✅ **Sistema de Temas** completo (claro/escuro)
+- ✅ **Tradução bilíngue** (Português/Inglês)
+- ✅ **Context API** para gerenciamento de estado
+- ✅ **Persistência** de preferências do usuário
+- ✅ **Componentes modernos** com glassmorphism
+- ✅ **Bandeiras SVG** para melhor compatibilidade
+- ✅ **Hooks personalizados** para reutilização
+- ✅ **Responsividade aprimorada** em mobile
 
 ---
 
 ⭐ Se este projeto te ajudou, deixe uma estrela no repositório!
+
+🌟 **Funcionalidades Premium:**
+- 🎨 **Dual Theme System** - Tema automático baseado no sistema
+- 🌍 **i18n Complete** - Tradução total PT/EN
+- 📱 **Mobile First** - Design responsivo avançado
+- 🎭 **Modern UI/UX** - Glassmorphism e micro-interações
