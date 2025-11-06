@@ -10,19 +10,19 @@ const Skill = () => {
             <div className="skill-card-container">
                 <div className="skill-card">
                     <h3 className="skill-h3">40%</h3>
-                    <p className="skill-p">Figma</p>
+                    <p className="skill-p">Visual Design</p>
                 </div>
                 <div className="skill-card">
                     <h3 className="skill-h3">30%</h3>
-                    <p className="skill-p">React.JS</p>
+                    <p className="skill-p">Figma</p>
                 </div>
                 <div className="skill-card">
                     <h3 className="skill-h3">20%</h3>
-                    <p className="skill-p">JavaScript</p>
+                    <p className="skill-p">Prototyping</p>
                 </div>
                 <div className="skill-card">
                     <h3 className="skill-h3">10%</h3>
-                    <p className="skill-p">TypeScript</p>
+                    <p className="skill-p">Wireframe</p>
                 </div>
             </div>
         </div>
